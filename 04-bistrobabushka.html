@@ -4,40 +4,144 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>BISTRO BABUSHKA</title>
     <style>
         main {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             grid-gap: 20px;
             grid-row-gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+
+        }
+
+        body {
+            background-image: url(baggrunde/michael-olsen-YWxfEBlvoiI-unsplash.jpg);
+            background-size: cover;
         }
 
         article:hover {
-            box-shadow: 1px 1px 5px green;
-            transition: all 0.5s ease-in-out;
+            box-shadow: 3px 3px 10px #00644d;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        img {
+            border: 1px solid #ffc33a;
+            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
 
         }
 
         article {
             display: flex;
             flex-direction: column;
-            border: 1px solid orange;
+            border: 2px solid #ffc33a;
             border-radius: 10px;
             padding: 10px;
+            /*            background-image: url(baggrunde/tina-dawson-Kim9COAIEGc-unsplash.jpg);*/
+            background-size: contain;
+            background-color: white;
+
+        }
+
+        h1 {
+            text-align: center;
+            /*            background-image: url(baggrunde/tina-dawson-Kim9COAIEGc-unsplash.jpg);*/
+            background-size: cover;
+            /*
+            -webkit-text-stroke: 0.1px #ffc33a;
+            border: 1px solid #ffb100;
+            border-radius: 10px;
+*/
+            font-family: 'Bebas Neue', cursive;
+            background-image: url(baggrunde/Streg4.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 20px 0px 20px 0px;
+            max-width: 350px;
+            margin: 0 auto;
+
+
+
+        }
+
+        h2 {
+            text-align: center;
+            background-image: url(baggrunde/Streg2.png);
+            background-size: cover;
+            font-family: 'Bebas Neue', cursive;
+            margin-left: 20px;
+            margin-right: 20px;
+
+        }
+
+        p {
+            text-align: center;
+            margin-top: -2px;
+            font-family: 'Indie Flower', cursive;
+            font-size: 1.2rem;
+            background-repeat: no-repeat;
+            border: 1px solid #ffb100;
+            border-radius: 10px;
+
+        }
+
+        button {
+            text-align: center;
+            margin-top: -2px;
+            font-family: 'Indie Flower', cursive;
+            font-size: 1rem;
+            background-image: url(baggrunde/Streg4.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            padding: 0px 10px 10px 19px;
+            border: none;
+
+
+        }
+
+        .alle {
+
+            padding: 0px 30px 10px 30px;
+            border: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0px 0px 10px 0px;
         }
 
         .valgt {
-            background-color: lightgreen;
+
+            border-bottom: 2px solid #ffb100;
+            display: inline-block;
+            line-height: 0;
+            /*
+            text-decoration: underline;
+            text-decoration-color: #ffb100;
+*/
         }
+
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Alle</h1>
+        <h1>BISTRO BABUSHKA</h1>
         <nav>
-            <button data-kategori="alle" class="valgt">Alle</button>
+            <button data-kategori="alle" class="valgt alle">Alle</button>
             <button data-kategori="forretter">Forretter</button>
             <button data-kategori="hovedretter">Hovedretter</button>
             <button data-kategori="desserter">Desserter</button>
@@ -115,5 +219,8 @@
             console.log(hvad);
             location.href = `detalje.html?id=${hvad._id}`;
         }
+
     </script>
-</body></html>
+</body>
+
+</html>

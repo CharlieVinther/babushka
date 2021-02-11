@@ -4,21 +4,91 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single view</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>BISTRO BABUSHKA</title>
     <style>
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-image: url(baggrunde/michael-olsen-YWxfEBlvoiI-unsplash.jpg);
+            background-size: cover;
+        }
+
         img {
             width: 100%;
             max-width: 1000px;
+            border: 1px solid #ffc33a;
+            border-radius: 10px;
         }
+
+        article {
+
+            border: 2px solid #ffc33a;
+            border-radius: 10px;
+            padding: 10px;
+            background-size: contain;
+            background-color: white;
+        }
+
+        h2 {
+
+            text-align: center;
+            background-size: cover;
+            font-family: 'Bebas Neue', cursive;
+            background-image: url(baggrunde/Streg4.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 20px 0px 20px 0px;
+            max-width: 350px;
+            margin: 0 auto;
+        }
+
+        p {
+            /*          text-align: center;*/
+            margin-top: -2px;
+            font-family: 'Indie Flower', cursive;
+            font-size: 1.2rem;
+            border: 1px solid #ffb100;
+            border-radius: 10px;
+            padding: 5px 5px 5px 5px;
+
+        }
+
+        .pris {
+            text-align: center;
+            font-family: 'Bebas Neue', cursive;
+
+
+        }
+
+        button {
+            text-align: center;
+            margin-top: 5px;
+            font-family: 'Indie Flower', cursive;
+            font-size: 1rem;
+            background-image: url(baggrunde/Streg4.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            padding: 0px 10px 10px 19px;
+            border: none;
+
+        }
+
     </style>
-    <link rel="stylesheet" href="">
 </head>
 
 <body>
 
     <main id="liste">
         <article class="ret">
-            <img src="" alt="" class="billede">
+            <img src="#" alt="" class="billede">
             <h2 class="navn"></h2>
             <p class="langbeskrivelse"></p>
             <p class="pris"></p>
@@ -62,5 +132,8 @@
         function tilbage() {
             history.back();
         }
+
     </script>
-</body></html>
+</body>
+
+</html>
